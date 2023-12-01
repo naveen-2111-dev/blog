@@ -5,11 +5,29 @@
     color:white;
 }
 
+body{
+    overflow: hidden;
+}
+
 .main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 20px;
+}
+
+img{
+     animation: spin infinite 4s linear;
+     animation-play-state: running;
+}
+
+@keyframes spin {
+  from {
+    transform:rotate(180deg);
+}
+  to {
+    transform:rotate(360deg);
+}
 }
 
 .main h3{
@@ -36,13 +54,36 @@
 .col2 h1{
     font-size: 3.3rem;
     display: flex;
+    position: relative;
 }
 
 .ext{
-    margin-left: 10px;
-    border-left: 2px solid grey;
+    margin-left: 20px;
 }
 
+.ext:before{
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:  rgb(2, 2, 58);
+    position: absolute;
+    margin-left: 24.6rem;
+    width: 8rem;
+    border-left: 7px solid grey;
+    animation: side 4s steps(20) infinite;
+}
+
+@keyframes side {
+    40%,60%{
+        left: 26%;
+    }
+    100%{
+        left: 0%;
+        border-left: 7px solid skyblue;
+    }
+}
 
 .but{
     margin: auto;

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css" media="screen" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="main">
+        <img
+          src="logo.png"
+          width="100rem"
+        />
+      </nav>
+    </div>
+    <div class="mont">
+      <div class="main-cont">
+        <div class="col2">
+          <h1>
+            <span>D</span>epartment of
+            <div class="ext" id="tn">cse..!</div>
+          </h1>
+        </div>
+      </div>
+      <div class="but">
+        <button id="change"><span>s</span>taff</button>
+        <button><span>s</span>tudent</button>
+      </div>
+    </div>
+    <div class="background-image"></div>
+    <script>
+      var value = document.getElementById("tn");
+
+      const ValueLoader = () => {
+        setTimeout(() => {
+          value.textContent = "cse..!";
+        }, 0);
+
+        setTimeout(() => {
+          value.textContent = "sce.!!";
+        }, 4100);
+      };
+
+      ValueLoader();
+      setInterval(ValueLoader, 8200, true);
+    </script>
+
+    <script>
+        var Change = document.getElementById('change');
+
+        change.addEventListener('click',()=>{
+            window.location.href="branch1/index2.html"; 
+        })
+    </script>
+  </body>
+</html>
