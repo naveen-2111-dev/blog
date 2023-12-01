@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(2, 2, 58);
+    color:white;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.main h3{
+    margin: 20px;
+}
+
+.col2 span
+{
+    color: skyblue;
+    font-size: 4rem;
+}
+
+.main-cont{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 10rem;
+}
+
+.col2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+
+.col2 h1{
+    font-size: 3.3rem;
+    display: flex;
+}
+
+.ext{
+    margin-left: 10px;
+    border-left: 2px solid grey;
+}
+
+
+.but{
+    margin: auto;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+button{
+    padding: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 50px;
+    border-radius: 12px;
+    border: 2px solid grey;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+button:nth-child(2){
+    margin-left: 15px;
+}
+
+button:hover{
+    padding-right: 30px;
+    padding-left: 30px;
+    transition: 0.5s ease-in-out;
+    border-radius: 0;
+    border: 2px solid skyblue;
+    font-size: 1.5rem;
+    box-shadow: 2px 2px 40px skyblue;
+}
+
+.but span{
+    color: skyblue;
+}
+
