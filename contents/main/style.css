@@ -38,6 +38,9 @@ img{
 {
     color: skyblue;
     font-size: 4rem;
+    rotate: -35deg;
+    background: none;
+    font-weight: 900;
 }
 
 .main-cont{
