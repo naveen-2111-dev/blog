@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
-    <link rel="stylesheet" href="style.css" media="screen" />
+    <link rel="stylesheet" href="./style.css" media="screen" />
   </head>
   <body>
     <div class="container">
       <nav class="main">
         <img
-          src="logo.png"
+          src="./logo.png"
           width="100rem"
         />
       </nav>
@@ -26,7 +26,7 @@
       </div>
       <div class="but">
         <button id="change"><span>s</span>taff</button>
-        <button><span>s</span>tudent</button>
+        <button id="student"><span>s</span>tudent</button>
       </div>
     </div>
     <div class="background-image"></div>
@@ -49,10 +49,16 @@
 
     <script>
         var Change = document.getElementById('change');
+        var student = document.getElementById('student');
 
         change.addEventListener('click',()=>{
-            window.location.href="branch1/index2.html"; 
-        })
+            window.location.href="../branch1/index2.html"; 
+        }); 
+
+        student.addEventListener('click',()=>{
+          window.location.href = "../branch3/index4.html";
+        });
+
     </script>
   </body>
 </html>

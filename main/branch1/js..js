@@ -82,6 +82,6 @@ document.addEventListener("DOMContentLoaded", () => {
     passwordElement.type = "password";
   });
   if (JSON.parse(localStorage.getItem("isLogin"))===true) {
-    window.location.href = "index3.html";
+    window.location.href = "../branch2/index3.html";
   }
 });
