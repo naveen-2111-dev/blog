@@ -45,10 +45,85 @@ h1{
     margin-left: 20px;
 }
 
-.row{
-    width: 180px;
-    height: 200px;
+input, textarea{
+    margin: 0 auto;
+    display: block;
+    align-items: center;
+    outline: none;
+    border: none;
+    color: skyblue;
+    font-weight: 900;
+    border-radius: 10px;
+}
+
+textarea{
+    text-align: center;
+}
+
+input{
+    width: 23rem;
+    padding: 10px;
+}
+
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+button{
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: transparent;
+    display: block;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+button:hover{
+    border-radius: 0;
+    animation: move 0.5s linear;
+    font-size: 1.5rem;
+    transition: 0.5s ease-in-out;
+    border: 2px solid skyblue;
+}
+
+@keyframes move{
+    from {
+        transform: scale(1.2);
+        box-shadow: 5px 5px 30px skyblue;
+        border: 2px solid skyblue;
+      }
+      to {
+        transform: scale(1);
+        border: 2px solid skyblue;
+      }
+}
+
+button:nth-child(2){
+    margin-left: 40px;
+}
+
+.addPost{
+    padding: 40px;
+    margin: auto;
+    display: block;
+    align-items: center;
+    margin-top: 100px;
+    width: 30rem;
+    height: 15rem;
     background-color: rgb(2,2,58);
     box-shadow: 5px 5px 40px black;
     border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.addPost:hover{
+    transform: scale(1.2);
+    border: 2px solid skyblue;
+    box-shadow: 5px 10px 40px skyblue;
+    border-radius: 3px;
+
 }
